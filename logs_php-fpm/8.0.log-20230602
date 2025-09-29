@@ -1,0 +1,7 @@
+[01-Jun-2023 15:02:24 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Str" not found in /home/storage/a/b9/06/armalegalfaspm1/public_html/vendor/laravel/framework/src/Illuminate/Http/Concerns/InteractsWithContentTypes.php:16
+Stack trace:
+#0 /home/storage/a/b9/06/armalegalfaspm1/public_html/vendor/laravel/framework/src/Illuminate/Http/Request.php(489): Illuminate\Http\Request->isJson()
+#1 /home/storage/a/b9/06/armalegalfaspm1/public_html/vendor/laravel/framework/src/Illuminate/Http/Request.php(68): Illuminate\Http\Request::createFromBase(Object(Symfony\Component\HttpFoundation\Request))
+#2 /home/storage/a/b9/06/armalegalfaspm1/public_html/public/index.php(22): Illuminate\Http\Request::capture()
+#3 {main}
+  thrown in /home/storage/a/b9/06/armalegalfaspm1/public_html/vendor/laravel/framework/src/Illuminate/Http/Concerns/InteractsWithContentTypes.php on line 16
