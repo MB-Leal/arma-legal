@@ -17,12 +17,12 @@ class AutorizacaoController extends Controller
 
        $associado = Associado::where('cpf', session()->get('cpf'))->first();
 
-       $qtdArma = Arma::where('id', $request->id)->value('quantidade');
+       //$qtdArma = Arma::where('id', $request->id)->value('quantidade');
 
-       if($qtdArma > 0){
+       /*if($qtdArma > 0){
         $qtd = $qtdArma - 1;
         Arma::where('id', $request->id)->update(['quantidade'=>$qtd]);
-       }
+       }*/
 
 
         return view('site.autorizacao', [

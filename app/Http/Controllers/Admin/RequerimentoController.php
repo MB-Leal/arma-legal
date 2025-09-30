@@ -10,25 +10,10 @@ use App\Models\Associado;
 class RequerimentoController extends Controller
 {
     public function index(Request $request){
-        if($request->pesquisa != ''){
-            $result = Requerimento::where('nome', 'like', '%'.$request->pesquisa.'%')
-            ->orderBy('nome')
-            ->limit(10)
-            ->get();
-
-            if($result){
-                return view('admin.associado', ['resultado' => $result]);
-            }else{
-                $result = 'Associado Não localizado!';
-            return view('admin.associado', ['resultado' => $result]);
-            }
-
-        }else{
-            $result = null;
-            return view('admin.associado', ['resultado' => $result]);
-        }
-        return view('admin.requerimento');
+        $requerimentos = Requerimentos::paginate(50);
+        return view('admin.listaRequerimento', ['requerimentos'=> $requerimentos]);
     }
+
     public function show(){
         return view('admin.reqDetalhe');
     }
@@ -48,6 +33,7 @@ class RequerimentoController extends Controller
             'dadosAssoc'=>$dadosAssocReq
         ]);
     }
+
     public function exibirRequerimento(){
         return view('admin.exibirRequerimento');
     }

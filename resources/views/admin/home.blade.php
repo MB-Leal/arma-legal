@@ -124,6 +124,20 @@
                 </a>
             </div>
             <div
+                class="border lg:w-[50%] w-[100%] h-[100%] flex justify-center items-center bg-yellow-700 hover:bg-yellow-800">
+                <a href="{{ route('admin.requerimento') }}"
+                    class="w-[100%] h-[100%] justify-center items-center flex text-white font-bold text-2xl">
+                    <p class="mr-2">Visualizar Requerimentos</p>
+                    <svg width="50px" height="50px" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                        <title>70 Basic icons by Xicons.co</title>
+                        <rect x="3" y="3" width="42" height="42" rx="4" ry="4"
+                            fill="#d7effa" />
+                        <path d="M24,34.25a2,2,0,0,1-2-2V15.75a2,2,0,0,1,4,0v16.5A2,2,0,0,1,24,34.25Z" fill="#38b1e7" />
+                        <path d="M32,26H16a2,2,0,0,1,0-4H32A2,2,0,0,1,32,26Z" fill="#38b1e7" />
+                    </svg>
+                </a>
+            </div>
+            <div
                 class="border lg:w-[50%] w-[100%] h-[100%] flex justify-center items-center bg-purple-700 hover:bg-purple-800">
                 <a href="{{ route('admin.usuario') }}"
                     class="w-[100%] h-[100%] justify-center items-center flex text-white font-bold text-2xl">

@@ -5,7 +5,7 @@
         <div class="bg-zinc-800 flex items-center justify-center flex-col lg:w-[90%] mt-4 mb-8 m-auto">
             <div id="title" class="w-[100%] h-[5em] flex justify-center items-center text-gray-300 flex-col bg-zinc-950">
                 <h1 class="text-bold text-2xl">SIMULADOR DE PREÇOS</h1>
-                <small class="text-sm mb-2">(OBS: Os valores podem variar)</small>
+                <small class="text-sm mb-2">(OBS: Os valores podem variar)</small>                
             </div>
 
             <form method="POST"
@@ -16,7 +16,7 @@
                     <Label class="font-bold text-xl lg:w-[30%] " for="arma">Arma Escolhida: </Label>
                     <input
                         class="outline-none w-[100%] border-none bg-transparent rounded-lg text-blue-700 text-xl p-2 font-bold text-center"
-                        type="text" value=" {{ $armas->nome }} - {{ $armas->calibre }}" name="descArma">
+                        type="text" value=" {{ $armas->nome }} - {{ $armas->calibre }}" name="descArma">                        
                 </div>
 
                 <div class=" justify-between items-center flex w-[90%] lg:flex-row flex-col overflow-hidden lg:gap-8">
@@ -29,7 +29,6 @@
                 </div>
 
                 <div class="justify-between items-center flex w-[90%] lg:flex-row flex-col overflow-hidden lg:gap-8">
-
                     <Label class="font-bold text-xl lg:w-[30%] " for="tooltip" data-toggle="tooltip" data-placement="top"
                         title="
             / 1 - 20% / 2 a 5 - 30% / 6 a 8 - 40% / 9 a 12 - 50% / 12 em diante - 70% / ">Número
@@ -41,7 +40,7 @@
                 </div>
 
                 <div class="w-[90%] flex justify-center">
-                    <span class="text-orange-600 font-bold" id="span-infor">(Máximo 24 vezes)</span>
+                    <span class="text-orange-600" id="span-infor">(Digite a quantidade de parcelas, máximo 24. Depois clique fora do campo para gerar o cálculo.)</span>
                 </div>
 
                 <div class="hidden w-[90%] lg:flex-row flex-col overflow-hidden lg:gap-8">
@@ -78,8 +77,7 @@
                     </button>
                 </div>
                 <div>
-                    <span class="text-orange-600 font-bold"><strong>Aviso!</strong> Só clique em proseguir se realmento for
-                        dar proseguimento no processo de aquisição, pois será reservada arma que você escolheu.</span>
+                    <span class="text-orange-600 font-bold"><strong>Aviso!</strong> O processo só será iniciado quando a seção Arma Legal do FASPM receber o documento.</span>
                 </div>
             </form>
         </div>
